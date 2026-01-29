@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea Completa: Lógica Matemática</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 950px; margin: 0 auto; padding: 20px; background-color: #f4f7f9; }
+        h1 { color: #0d47a1; text-align: center; border-bottom: 4px solid #0d47a1; padding-bottom: 10px; }
+        h2 { color: #1565c0; border-left: 5px solid #1565c0; padding-left: 10px; margin-top: 30px; }
+        .guia { background: #fff; padding: 15px; border-left: 5px solid #0d47a1; margin-bottom: 25px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .ejercicio { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #e0e0e0; }
+        .titulo-ej { font-weight: bold; color: #b71c1c; font-size: 1.1em; display: block; margin-bottom: 10px; }
+        .datos { margin-left: 10px; }
+        .simbolo-final { font-weight: bold; color: #1b5e20; background: #e8f5e9; padding: 5px 12px; border-radius: 4px; display: inline-block; margin-top: 10px; border: 1px solid #c8e6c9; font-size: 1.1em; }
+        b.var { color: #0d47a1; } 
+        b.op { color: #000; font-weight: bold; } 
+        
+        .barra-separadora { height: 15px; background-color: black; margin: 40px 0; border-radius: 2px; }
+        
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; background: white; font-size: 0.9em; }
+        th { background-color: #0d47a1; color: white; padding: 8px; border: 1px solid #ddd; }
+        td { padding: 6px; border: 1px solid #ddd; text-align: center; }
+        .v { color: green; font-weight: bold; }
+        .f { color: red; font-weight: bold; }
+        .seccion-nueva { background-color: #fff; padding: 25px; border-radius: 8px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+    <h1>Resolución de Proposiciones 1 al 31</h1>
+
+    <div class="guia">
+        <strong>Referencia de Símbolos:</strong><br>
+        Negación: <b>~</b> | Conjunción: <b>^</b> | Disyunción: <b>v</b> | Condicional: <b>-></b> | Bicondicional: <b><-></b>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">1. Puedo manejar un auto si tiene dirección hidráulica.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> el auto tiene dirección hidráulica, <b class="op">entonces</b> puedo manejarlo.<br>
+            <b class="var">p</b>: "El auto tiene dirección hidráulica"<br>
+            <b class="var">q</b>: "Puedo manejar el auto"<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">2. Gabriel García Márquez fue un gran escritor y bailarín.</span>
+        <div class="datos">
+            Reescrita: Gabriel García Márquez fue un gran escritor <b class="op">y</b> Gabriel García Márquez fue un gran bailarín.<br>
+            <b class="var">p</b>: "Gabriel García Márquez fue un gran escritor"<br>
+            <b class="var">q</b>: "Gabriel García Márquez fue un gran bailarín"<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">3. Las células son procariotas o eucariotas.</span>
+        <div class="datos">
+            Reescrita: Las células son procariotas <b class="op">o</b> las células son eucariotas.<br>
+            <b class="var">p</b>: "Las células son procariotas"<br>
+            <b class="var">q</b>: "Las células son eucariotas"<br>
+            Símbolo: <span class="simbolo-final">p v q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">4. La raíz cuadrada de 25 es 5, o -5.</span>
+        <div class="datos">
+            Reescrita: La raíz cuadrada de 25 es 5 <b class="op">o</b> la raíz cuadrada de 25 es -5.<br>
+            <b class="var">p</b>: "La raíz cuadrada de 25 es 5"<br>
+            <b class="var">q</b>: "La raíz cuadrada de 25 es -5"<br>
+            Símbolo: <span class="simbolo-final">p v q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">5. No todos los números primos son impares.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Es falso que</b> todos los números primos son impares.<br>
+            <b class="var">p</b>: "Todos los números primos son impares"<br>
+            Símbolo: <span class="simbolo-final">~p</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">6. Mi cuñado es arquitecto e ingeniero.</span>
+        <div class="datos">
+            Reescrita: Mi cuñado es arquitecto <b class="op">e</b> ingeniero.<br>
+            <b class="var">p</b>: "Mi cuñado es arquitecto"<br>
+            <b class="var">q</b>: "Mi cuñado es ingeniero"<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">7. Los aparatos tecnológicos son negros, blancos o grises.</span>
+        <div class="datos">
+            Reescrita: Los aparatos son negros <b class="op">o</b> blancos <b class="op">o</b> grises.<br>
+            <b class="var">p</b>: "Los aparatos son negros"<br>
+            <b class="var">q</b>: "Los aparatos son blancos"<br>
+            <b class="var">r</b>: "Los aparatos son grises"<br>
+            Símbolo: <span class="simbolo-final">p v q v r</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">8. Si tengo hambre pues cocino.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> tengo hambre, <b class="op">entonces</b> cocino.<br>
+            <b class="var">p</b>: "Tengo hambre"<br>
+            <b class="var">q</b>: "Cocino"<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">9. Turquía es un país que se encuentra en Asia y Europa.</span>
+        <div class="datos">
+            Reescrita: Turquía se encuentra en Asia <b class="op">y</b> Turquía se encuentra en Europa.<br>
+            <b class="var">p</b>: "Turquía está en Asia"<br>
+            <b class="var">q</b>: "Turquía está en Europa"<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">10. Teorema de Pitágoras.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> es un triángulo rectángulo, <b class="op">entonces</b> a² + b² = c².<br>
+            <b class="var">p</b>: "Se trata de un triángulo rectángulo"<br>
+            <b class="var">q</b>: "La suma de cuadrados de catetos es igual al cuadrado de la hipotenusa"<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">11. Una ballena no es roja.</span>
+        <div class="datos">
+            Reescrita: <b class="op">No</b> es cierto que una ballena es roja.<br>
+            <b class="var">p</b>: "Una ballena es roja"<br>
+            Símbolo: <span class="simbolo-final">~p</span>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">17. El 9 divide al 45 y el 3 al 9 y al 45.</span>
+        <div class="datos">
+            Reescrita: El 9 divide al 45 <b class="op">y</b> el 3 divide al 9 <b class="op">y</b> el 3 divide al 45.<br>
+            <b class="var">p</b>: "9 divide al 45"<br>
+            <b class="var">q</b>: "3 divide al 9"<br>
+            <b class="var">r</b>: "3 divide al 45"<br>
+            Símbolo: <span class="simbolo-final">p ^ q ^ r</span>
+            <table>
+                <tr><th>p</th><th>q</th><th>r</th><th>Resultado</th></tr>
+                <tr><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr>
+                <tr><td>V</td><td>V</td><td>F</td><td class="f">F</td></tr>
+                <tr><td>V</td><td>F</td><td>V</td><td class="f">F</td></tr>
+                <tr><td>F</td><td>V</td><td>V</td><td class="f">F</td></tr>
+                <tr><td>F</td><td>F</td><td>F</td><td class="f">F</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">23. Basketball y Football.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> el parque está abierto, <b class="op">entonces</b> juego basketball <b class="op">y</b> fútbol.<br>
+            <b class="var">p</b>: "El parque está abierto"<br>
+            <b class="var">q</b>: "Juego basketball"<br>
+            <b class="var">r</b>: "Juego fútbol"<br>
+            Símbolo: <span class="simbolo-final">p -> (q ^ r)</span>
+            <table>
+                <tr><th>p</th><th>q</th><th>r</th><th>q ^ r</th><th>p -> (q ^ r)</th></tr>
+                <tr><td>V</td><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr>
+                <tr><td>V</td><td>V</td><td>F</td><td>F</td><td class="f">F</td></tr>
+                <tr><td>F</td><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">28. Softball y carrera.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> juego softball <b class="op">y no</b> corro rápido, <b class="op">entonces</b> perderemos.<br>
+            <b class="var">p</b>: "Juego softball"<br>
+            <b class="var">q</b>: "Corro rápido"<br>
+            <b class="var">r</b>: "Vamos a perder el juego"<br>
+            Símbolo: <span class="simbolo-final">(p ^ ~q) -> r</span>
+            <table>
+                <tr><th>p</th><th>q</th><th>r</th><th>~q</th><th>p ^ ~q</th><th>Resultado</th></tr>
+                <tr><td>V</td><td>F</td><td>F</td><td>V</td><td>V</td><td class="f">F</td></tr>
+                <tr><td>V</td><td>F</td><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">31. Examen e ingreso.</span>
+        <div class="datos">
+            Reescrita: Apruebo el examen <b class="op">si y solo si</b> ingreso a la universidad.<br>
+            <b class="var">p</b>: "Apruebo el examen"<br>
+            <b class="var">q</b>: "Ingreso a la universidad"<br>
+            Símbolo: <span class="simbolo-final">p <-> q</span>
+        </div>
+    </div>
+
+    <div class="barra-separadora"></div>
+
+    <div class="seccion-nueva">
+        <h2>1. Ejemplos de Proposiciones y No Proposiciones</h2>
+        <p>Para que un enunciado sea una proposición, debe ser una oración aseverativa de la cual se pueda decir si es verdadera o falsa.</p>
+        
+        <p><strong>Ejemplos de proposiciones:</strong><br>
+        • "El número 15 es un número primo." (Es una proposición falsa).<br>
+        • "San Salvador es la capital de El Salvador." (Es una proposición verdadera).</p>
+        
+        <p><strong>Ejemplos que NO son proposiciones:</strong><br>
+        • "¿Qué hora es?" (Las preguntas no tienen valor de verdad).<br>
+        • "¡Cierra la puerta!" (Las órdenes o exclamaciones no son verdaderas ni falsas).</p>
+
+        <h2>Ejercicio 2: Formalización Directa</h2>
+        <div class="ejercicio">
+            <span class="titulo-ej">a. Kant es filósofo, pero Frege es lógico.</span>
+            Reescrita: Kant es filósofo <b class="op">y</b> Frege es lógico.<br>
+            <b class="var">p</b>: Kant es filósofo.<br>
+            <b class="var">q</b>: Frege es lógico.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+        </div>
+
+        <div class="ejercicio">
+            <span class="titulo-ej">b. No iremos al teatro a menos que venga Raúl.</span>
+            Reescrita: <b class="op">Si no</b> viene Raúl, <b class="op">entonces no</b> iremos al teatro.<br>
+            <b class="var">p</b>: Iremos al teatro.<br>
+            <b class="var">q</b>: Viene Raúl.<br>
+            Símbolo: <span class="simbolo-final">~q -> ~p</span>
+        </div>
+
+        <div class="ejercicio">
+            <span class="titulo-ej">c. Einstein no es filósofo, sino físico.</span>
+            Reescrita: Einstein <b class="op">no</b> es filósofo <b class="op">y</b> Einstein es físico.<br>
+            <b class="var">p</b>: Einstein es filósofo.<br>
+            <b class="var">q</b>: Einstein es físico.<br>
+            Símbolo: <span class="simbolo-final">~p ^ q</span>
+        </div>
+
+        <div class="ejercicio">
+            <span class="titulo-ej">d. Euclides no es médico ni físico.</span>
+            Reescrita: Euclides <b class="op">no</b> es médico <b class="op">y</b> Euclides <b class="op">no</b> es físico.<br>
+            <b class="var">p</b>: Euclides es médico.<br>
+            <b class="var">q</b>: Euclides es físico.<br>
+            Símbolo: <span class="simbolo-final">~p ^ ~q</span>
+        </div>
+
+        <h2>Ejercicio 3: Conectivos y Fórmulas</h2>
+        
+
+[Image of logical connectors truth tables]
+
+        
+        <div class="ejercicio">
+            <span class="titulo-ej">a. Sin carbono, oxígeno, nitrógeno e hidrógeno, no hay vida.</span>
+            Conectivos: <b class="op">Conjunción</b>, <b class="op">Negación</b>, <b class="op">Condicional</b>.<br>
+            <b class="var">p</b>: Hay carbono / <b class="var">q</b>: Hay oxígeno / <b class="var">r</b>: Hay nitrógeno / <b class="var">s</b>: Hay hidrógeno / <b class="var">t</b>: Hay vida.<br>
+            Símbolo: <span class="simbolo-final">~(p ^ q ^ r ^ s) -> ~t</span>
+        </div>
+
+        <div class="ejercicio">
+            <span class="titulo-ej">b. Waldir y Chemo son atletas porque son futbolistas.</span>
+            Conectivos: <b class="op">Conjunción</b>, <b class="op">Condicional inverso</b>.<br>
+            <b class="var">p</b>: Waldir es atleta / <b class="var">q</b>: Chemo es atleta / <b class="var">r</b>: Waldir es futbolista / <b class="var">s</b>: Chemo es futbolista.<br>
+            Símbolo: <span class="simbolo-final">(r ^ s) -> (p ^ q)</span>
+        </div>
+
+        <div class="ejercicio">
+            <span class="titulo-ej">c. César es profesor o es alumno, pero no ambas.</span>
+            Conectivos: <b class="op">Disyunción exclusiva</b>.<br>
+            <b class="var">p</b>: César es profesor.<br>
+            <b class="var">q</b>: César es alumno.<br>
+            Símbolo: <span class="simbolo-final">p ^ ~q (O exclusivo)</span>
+        </div>
+
+        <div class="ejercicio">
+            <span class="titulo-ej">d. FF.AA y FF.PP participan... pero no son deliberantes.</span>
+            Conectivos: <b class="op">Conjunción</b>, <b class="op">Negación</b>.<br>
+            <b class="var">p</b>: FF.AA participan / <b class="var">q</b>: FF.PP participan / <b class="var">r</b>: FF.AA son deliberantes / <b class="var">s</b>: FF.PP son deliberantes.<br>
+            Símbolo: <span class="simbolo-final">(p ^ q) ^ (~r ^ ~s)</span>
+        </div>
+    </div>
+
+</body>
+</html>
